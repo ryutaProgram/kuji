@@ -4,7 +4,7 @@
   var btn = document.getElementById('btn');
   var count = 1;
 
-  btn.addEventListener('mouseover', function() {
+  btn.addEventListener('click', function() {
     for (var i = 1; i < 10000; i++) {
       var n = Math.floor(Math.random() * 320);
       if (n === 1) {
