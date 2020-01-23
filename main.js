@@ -6,12 +6,10 @@
 
   btn.addEventListener('click', function() {
     for (var i = 1; i < 10000; i++) {
-      var n = Math.floor(Math.random() * 320);
+      var n = Math.floor((Math.random() * 199) + 1);
       if (n === 1) {
         this.textContent = '当たり';
         break;
-      } else {
-        this.textContent = 'はずれ';
       }
       document.getElementById('count').innerHTML = ++count;
     }
